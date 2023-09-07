@@ -182,7 +182,7 @@ def construct_nice_friedman_expr_list(n, neg0, neg1, neg2, neg3, neg4, neg5, pro
                         if (not bool(op0)) + (not bool(op1)) + (not bool(op2)) + (not bool(op3)) + (not bool(op4)) >= 4:
                             continue
                         # Remove '+ -' and '- -' because it is redundant (equivalent to - and +)
-                        # Remove '* -' and '/ -' because it is redundant (Commutative Property)
+                        # Remove '* -' and '/ -' because it is redundant (Associative Property)
                         if ((op0 and ' ** ' != op0 and neg1)
                                 or (op1 and ' ** ' != op1 and neg2)
                                 or (op2 and ' ** ' != op2 and neg3)
